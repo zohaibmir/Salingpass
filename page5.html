@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>SAILING PASS</title>
+
+        <link rel="stylesheet" href="stylesheets/app.css">
+
+
+
+        <script src="javascripts/jquery-1.7.1.js"></script>
+        <script src="javascripts/vendor/custom.modernizr.js"></script>       
+
+
+    </head>
+    <body>
+        <!-- Start of Header Section -->
+        <header id="header">
+            <div class="row collapse">
+                <div class="large-2 columns">                    
+                    <div class="logo">
+                        <a href="#"><img src="img/travel-logo2.png" alt="Logo" /></a>                                                
+                    </div>
+                </div>
+                <div class="large-10 columns">    
+                    <div class="travel-nav">
+                        <ul>
+                            <li class="active"><a href="#">Hotels</a></li>
+                            <li><a href="#">Flights</a></li>
+                            <li><a href="#">Vacations</a></li>
+                            <li><a href="#">Cars</a></li>                            
+                            <li><a href="#">Cruises</a></li>                            
+                            <li><a href="#">Things to do</a></li>                            
+                            <li><a href="#">Cruises</a></li>                            
+                            <li><a href="#">Things to do</a></li>                            
+                            <li><a href="#">Last minute</a></li>                            
+                            <li><a href="#">Early booking</a></li>                            
+                            <li><a href="#">Hot Deals</a></li>                            
+                        </ul> 
+
+                    </div>
+                </div>
+            </div>    
+        </header>
+        <!-- End of Header Section -->
+        <section id="main-content">
+            <section id="breadcrumb">
+                <div class="row collapse">
+                    <div class="columns large-12">
+                        <img src="img/bcrumbs-home.png" /> 
+
+                        <span class="bseprator"><img src="img/bcrumbs-seprator.png" /> </span> <a href="#" class="footer-link">Hotels</a>
+                        <span class="bseprator"><img src="img/bcrumbs-seprator.png" /> </span> <a href="#" class="footer-link">U.S.A</a>
+                        <span class="bseprator"><img src="img/bcrumbs-seprator.png" /> </span> <a href="#" class="footer-link">NewYourk</a>
+                        <span class="right"><img src="img/bcrumbs-backbtn.png" /></span>
+                        <br />
+                        <br />
+                        <img src="img/bcrumbs-bottom.gif" style="width: 1100px" />                        
+
+
+                    </div>
+                </div>
+            </section>
+            <section id="main">
+                <div class="row collapse">
+                    <div class="columns large-8">
+                        <div class="payment-form">                          
+                            <form class="custom">
+                                <section id="payment-step1">
+                                    <div class="row collapse">
+                                        <div class="large-10 columns">
+                                            <h5>Who's traveling? </h5>
+                                        </div>
+                                        <div class="large-2 columns  right">
+                                            <h5><span class="right"><img src="img/1.png" /></span></h5>
+                                        </div>                                
+                                    </div>
+                                    <hr />
+                                    <div class="row collapse">
+                                        <div class="large-12 columns">
+                                            <span class="gray-text">
+                                                Please tell us who will be checking in. Must be 18 or older. 
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="columns large-12">
+                                            <p>
+                                                Room 1:<span class="gray-text"> 2 Adults</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="columns large-3">
+                                            <label class="right" style="line-height:4">
+                                                Contact Name:<span class="orange-text"><strong>*</strong></span>
+                                            </label>
+                                        </div>
+                                        <div class="columns large-5">
+                                            <span class="gray-text small-text">First and Last Name<span class="orange-text"><strong>*</strong></span></span><br />
+                                            <input type="text" id="contactName" name="contactName" class="small">
+                                        </div>
+                                        <div class="columns large-4">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="columns large-3">
+                                            <label class="right" style="line-height:4">
+                                                Phone Number:<span class="orange-text"><strong>*</strong></span>
+                                            </label>
+                                        </div>
+                                        <div class="columns large-5">
+                                            <span class="gray-text small-text">Country Code<span class="orange-text"><strong>*</strong></span></span><br />
+                                            <select id="customDropdown">
+                                                <option>Sweden</option>
+                                            </select>
+                                        </div>
+                                        <div class="columns large-4">
+                                            <span class="gray-text small-text">Preferred Phone Number<span class="orange-text"><strong>*</strong></span></span><br />
+                                            <input type="text" id="contactName" name="contactName" class="small">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="columns large-3">
+                                            &nbsp;
+                                        </div>
+                                        <div class="large-9 columns" style="line-height: 1.5">
+
+                                            <a href="#" class="gray-text"> 
+                                                Bedding / Smoking Request (optional) &nbsp; <img src="img/payment-downicon.png" />
+                                            </a>
+                                            <br />
+                                            <a href="#" class="gray-text">
+                                                Special Requests (optional)&nbsp; <img src="img/payment-downicon.png" />
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                </section>
+                                <section id="payment-step2">
+                                    <div class="row collapse">
+                                        <div class="large-10 columns">
+                                            <h5>How would you like to pay? </h5>
+                                        </div>
+                                        <div class="large-2 columns  right">
+                                            <h5><span class="right"><img src="img/2.png" /></span></h5>
+                                        </div>                                
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <a href="#" class="gray-text">
+                                                Enter a coupon or promotion code <img src="img/payment-downicon.png" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <a href="#" class="gray-text">Credit/Debit card </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="#" class="gray-text active-link">PayPal</a>
+                                        </div>
+                                    </div>
+                                    <br /><br />
+                                    <div class="row">
+                                        <div class="columns large-4">
+                                            <label style="line-height:2" class="right">
+                                                Debit/Credit Card Number:<span class="orange-text"><strong>*</strong></span>
+                                            </label>
+                                        </div>
+                                        <div class="columns large-5">                                            
+                                            <input type="text" id="contactName" name="contactName" class="small">
+                                        </div>
+                                        <div class="columns large-3">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="columns large-4">
+                                            <label style="line-height:2" class="right">
+                                                Card Type:<span class="orange-text"><strong>*</strong></span>
+                                            </label>
+                                        </div>
+                                        <div class="columns large-5">                                            
+                                            <select id="customDropdown">
+                                                <option>Visa</option>
+                                            </select>
+                                        </div>
+                                        <div class="columns large-3">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="columns large-4">
+                                            <label style="line-height:2" class="right">
+                                                Expiration Date:<span class="orange-text"><strong>*</strong></span>
+                                            </label>
+                                        </div>
+                                        <div class="columns large-5">                                            
+                                            <div class="row collapse">
+                                                <div class="large-5 columns">
+                                                    <select id="customDropdown">
+                                                        <option>Visa</option>
+                                                    </select>
+                                                </div>
+                                                <div class="large-5 large-offset-1 columns">
+                                                    <select id="customDropdown">
+                                                        <option>Visa</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="columns large-3">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="columns large-4">
+                                            <label style="line-height:2" class="right">
+                                                Card Identification Number:<span class="orange-text"><strong>*</strong></span>
+                                            </label>
+                                        </div>
+                                        <div class="columns large-2">                                            
+                                            <input type="text" />
+                                        </div>
+                                        <div class="columns large-3">
+                                            <a href="#" class="gray-text" style="line-height: 2">What's this?</a>
+                                        </div>
+                                        <div class="columns large-3">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="columns large-4">
+                                            <label style="line-height:2" class="right">
+                                                Billing ZIP Code :<span class="orange-text"><strong>*</strong></span>
+                                            </label>
+                                        </div>
+                                        <div class="columns large-3">                                            
+                                            <input type="text" />
+                                        </div>
+
+                                        <div class="columns large-5">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="columns large-4">
+                                            <label style="line-height:2" class="right">
+                                                Cardholder Name:<span class="orange-text"><strong>*</strong></span>
+                                            </label>
+                                        </div>
+                                        <div class="columns large-5">                                            
+                                            <input type="text" />
+                                        </div>
+
+                                        <div class="columns large-3">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="payment-step3">
+                                    <div class="row collapse">
+                                        <div class="large-10 columns">
+                                            <h5>Where should we send your confirmation? </h5>
+                                        </div>
+                                        <div class="large-2 columns  right">
+                                            <h5><span class="right"><img src="img/3.png" /></span></h5>
+                                        </div>                                
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <a href="#" class="gray-text">
+                                                Please enter the email address where you would like to receive 
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="large-3 large-offset-1 columns">
+                                            <label class="right">
+                                                Email Address:<span class="orange-text"><strong>*</strong></span>
+                                            </label>
+                                        </div>
+                                        <div class="large-5 columns">
+                                            <input type="email" />
+                                        </div>                                        
+                                        <div class="large-3 columns">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </section>
+
+
+
+
+                                <section id="payment-step4">
+                                    <div class="row collapse">
+                                        <div class="large-10 columns">
+                                            <h5>Review and book your trip  </h5>
+                                        </div>
+                                        <div class="large-2 columns  right">
+                                            <h5><span class="right"><img src="img/4.png" /></span></h5>
+                                        </div>                                
+                                    </div>
+                                    <hr />
+                                    <div class="row collapse">
+                                        <div class="large-12 columns">
+                                            <div class="html">
+                                                <div class="highlight">
+                                                    <strong>Important information about your booking:</strong> <br />
+                                                    This reservation is non-refundable and cannot be changed or canceled
+                                                </div>
+                                            </div>
+                                            <p class="gray-text">
+                                                By selecting to complete this booking I acknowledge that I have read and accept the 
+                                                <a href="#">rules & restriction</a> &nbsp; <a href="#">terms & conditions</a>, and
+                                                <a href="#">privace policy</a>
+                                            </p>
+                                            <p><img src="img/complete-booking.png" /></p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="columns large-4">
+                        <div class="payment-form-right">
+                            <div class="row collapse">
+                                <div class="columns large-3">
+                                    <img src="img/payment-hotel.png" />
+                                </div>
+
+                                <div class="columns large-offset-1 large-8">
+                                    <h6>Mabely Grand Hotel <br />
+                                        <span class="gray-text small-text">
+                                            Zakynthos, Greece
+                                        </span>
+                                    </h6>
+                                    <img src="img/rating.png" />
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row collapse">
+                                <div class="large-11">
+                                    <p>Guests recommendations <span class="right green-price"><strong> 97%</strong></span>                                    
+                                        <br/>
+                                        Guest ratings<span class="right green-price"><strong> 4.5/<span class="gray-text">5</span></strong></span>
+                                    </p>
+                                    <img src="img/dotted-line.png" />
+                                </div>
+                            </div>
+
+                            <div class="row collapse">
+                                <div class="large-11">
+                                    <p>
+                                        <strong>1 Room:</strong> <span class="gray-text"> Standard Double Room</span> <br />
+                                        <strong>5 Nights:</strong> <span class="gray-text">Sep/10/2013 - Sep/14/201</span>
+                                    </p>
+                                    <img src="img/dotted-line.png" />
+                                </div>
+                            </div>
+                            <div class="row collapse">
+                                <div class="large-11">
+                                    <p>
+                                        <strong> Room 1:</strong> <span class="gray-text">2 Adults</span> <span class="right gray-text">avg./night</span>
+                                        <br />
+                                        <span class="gray-text">5 Nights &nbsp;</span><img src="img/payment-downicon.png" /> <span class="right gray-text">$35.92</span>
+                                        <br />
+                                        <span class="gray-text">Taxes & Fees per night &nbsp;</span> <img src="img/payment-downicon.png" /> <span class="right gray-text>"$2.51</span>
+                                </p>
+                                <p>&nbsp;</p>
+                                <img src="img/dotted-line.png" />
+                            </div>
+                        </div>
+                        <div class="row collapse">
+                            <div class="large-11">
+                                <p>
+                                    <strong>
+                                        Trip Total:
+                                    </strong>
+                                    <span class="right red-price">$192.15</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br />
+                    <div class="payment-form-right">
+                        <div class="row collapse">
+                            <div class="columns large-2">
+                                <img src="img/phone.png" />
+                            </div>
+
+                            <div class="columns large-offset-1 large-9">
+                                <h6>
+                                    Need Assistance?                                    
+                                </h6>
+                                <p class="gray-text">
+                                    Our team is 24/7 at your service to help  you with your booking issues or answer any related questions.
+                                </p>
+                                <p class="text-center phone-number">
+                                    1-866-599-6674
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="payment-form-right">
+                        <div class="row collapse">
+                            <div class="columns large-2">
+                                <img src="img/lock.png" />
+                            </div>
+
+                            <div class="columns large-10">
+                                <h5>
+                                    Log in                                   
+                                </h5>
+                                <form class="custom">
+                                    <p class="gray-text">
+                                        <input type="text" placeholder="Username" />
+                                    </p>
+                                    <p class="gray-text">
+                                        <input type="password" placeholder="Password" />
+                                    </p>
+
+                                    <div class="row collapse">
+                                        <div class="columns large-6">
+                                            <label for="checkbox1">
+                                                <input type="checkbox" id="checkbox1" style="display: none;">
+                                                <span class="custom checkbox"></span> 
+                                                <div class="gray-text small-text remember-me">Remember Me <br />
+                                                    <a href="#" class="gray-text">   Lost password? </a>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="columns large-6">
+                                            <img src="img/login-btn.png" class="right" />
+                                        </div>
+                                    </div>                                    
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Start of Footer Section -->
+    <section id="footer" style="background-color: #15262F">
+        <div class="row collapse">
+            <div class="columns large-3">
+                <h5>Let’s socialize</h5>
+                <img src="img/social-icons.png" />
+                <img src="img/travel-logo.png" style="margin-top: 40px" />
+            </div>
+            <div class="columns large-3">
+                <h5>Travel Specialists</h5>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Golf Vacations</a></li>
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Ski & Snowboarding</a></li>
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Disney Parks Vacations</a></li>
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Disneyland Vacations</a></li>
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Disney World Vacations</a></li>
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Vacations As Advertised</a></li>
+                </ul>
+            </div>
+            <div class="columns large-3">
+                <h5>Travel Specialists</h5>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Weddings</a></li>
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Accessible Travel</a></li>
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Disney Parks</a></li>
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Cruises</a></li>
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Round the World</a></li>
+                    <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;First Class Flights</a></li>
+                </ul>
+            </div>
+            <div class="columns large-3">
+                <h5>Newsletter</h5>
+                <div class="row collapse">
+                    <div class="large-10 columns">
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="large-2 columns">
+                        <img src="img/news-btn.png" class="postfix" />
+                    </div>
+                </div>
+                <br />
+                <h5>Customer Support</h5>
+                <h6 style="color: #0099CC">1-866-599-6674</h6>
+                <a href="mailto:office@travel.com" class="footer-link">office@travel.com</a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer-menu">
+        <ul class="bottom-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Last minute</a></li>
+            <li><a href="#">Early booking</a></li>                            
+            <li><a href="#">Special offers</a></li>                            
+            <li><a href="#">Blog</a></li>                            
+            <li><a href="#">Contact</a></li>                            
+        </ul> 
+        <center><a href="#header"><img src="img/go-top.png" /></a></center>
+    </footer>
+
+
+
+    <!-- End of Footer Section -->
+
+    <script>
+        document.write('<script src=' +
+            ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+            '.js><\/script>')
+    </script>
+
+    <script src="javascripts/foundation/foundation.js"></script>
+
+    <script src="javascripts/foundation/foundation.abide.js"></script>
+
+    <script src="javascripts/foundation/foundation.alerts.js"></script>
+
+    <script src="javascripts/foundation/foundation.clearing.js"></script>
+
+    <script src="javascripts/foundation/foundation.cookie.js"></script>
+
+    <script src="javascripts/foundation/foundation.dropdown.js"></script>
+
+    <script src="javascripts/foundation/foundation.forms.js"></script>
+
+    <script src="javascripts/foundation/foundation.interchange.js"></script>
+
+    <script src="javascripts/foundation/foundation.joyride.js"></script>
+
+    <script src="javascripts/foundation/foundation.magellan.js"></script>
+
+    <script src="javascripts/foundation/foundation.orbit.js"></script>
+
+    <script src="javascripts/foundation/foundation.placeholder.js"></script>
+
+    <script src="javascripts/foundation/foundation.reveal.js"></script>
+
+    <script src="javascripts/foundation/foundation.section.js"></script>
+
+    <script src="javascripts/foundation/foundation.tooltips.js"></script>
+
+    <script src="javascripts/foundation/foundation.topbar.js"></script>
+
+    <script src="javascripts/custom.js"></script>
+    <script>
+        $(document).foundation();           
+    </script>
+</body>
+</html>

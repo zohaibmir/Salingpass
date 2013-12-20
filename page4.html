@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>SAILING PASS</title>
+
+        <link rel="stylesheet" href="stylesheets/app.css">
+        <!-- bin/jquery.slider.min.css -->
+        <link rel="stylesheet" href="stylesheets/jslider.css" type="text/css">
+        <link rel="stylesheet" href="stylesheets/jslider.round.plastic.css" type="text/css">
+        <!-- end -->
+
+
+        <script src="javascripts/jquery.min.js"></script>
+        <script src="javascripts/vendor/custom.modernizr.js"></script>
+        <script type="text/javascript" src="javascripts/jquery-1.7.1.js"></script>
+
+        <script type="text/javascript" src="javascripts/jshashtable-2.1_src.js"></script>
+        <script type="text/javascript" src="javascripts/jquery.numberformatter-1.2.3.js"></script>
+        <script type="text/javascript" src="javascripts/tmpl.js"></script>
+        <script type="text/javascript" src="javascripts/jquery.dependClass-0.1.js"></script>
+        <script type="text/javascript" src="javascripts/draggable-0.1.js"></script>
+        <script type="text/javascript" src="javascripts/jquery.slider.js"></script>
+
+
+    </head>
+    <body>
+        <!-- Start of Header Section -->
+        <header id="header">
+            <div class="row collapse">
+                <div class="large-4 columns">                    
+                    <div class="logo">
+                        <a href="#"><img src="img/logo.png" alt="Logo" /></a>                                                
+                    </div>
+                </div>
+                <div class="large-8 columns">    
+                    <div class="top-nav">
+                        <ul class="nav-top">
+                            <li><a href="#"> mySailingPass</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Language (EN)</a></li>
+                            <li><a href="#">Currency (EUR)</a></li>
+                            <li> <a href="#">Blog</a></li>
+                        </ul>
+                        <ul class="nav-top2">
+                            <li><a href="#">DESTINATIONS</a></li>
+                            <li><a href="#">SEARCH YACHTS ON A MAP</a></li>
+                            <li><a href="#">HOW IT WORKS</a></li>
+                            <li><a href="#">CHARTER DISCOUNT</a></li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </header>
+        <!-- End of Header Section -->
+        <section id="main-content">
+            <section id="breadcrumb">
+                <div class="row collapse">
+                    <div class="columns large-12">
+                        <img src="img/bcrumbs-home.png" /> 
+                        <span class="bseprator"><img src="img/bcrumbs-seprator.png" /> </span> <a href="#" class="footer-link">Hotels</a>
+                        <span class="bseprator"><img src="img/bcrumbs-seprator.png" /> </span> <a href="#" class="footer-link">U.S.A</a>
+                        <span class="bseprator"><img src="img/bcrumbs-seprator.png" /> </span> <a href="#" class="footer-link">NewYourk</a>
+                        <span class="right"><img src="img/bcrumbs-backbtn.png" /></span>
+                        <br />
+                        <br />
+                        <img src="img/bcrumbs-bottom.gif" style="width: 1100px" />                        
+
+
+                    </div>
+                </div>
+            </section>
+            <section id="search-results">
+                <div class="row collapse">
+                    <div class="columns large-3">
+                        <div class="search-options">                            
+                            <div class="search-options-top">
+                                53 Hotels starting at <br />
+                                <strong>$53</strong> <br />
+                                Narrow results or view all
+                            </div>
+                            <div class="search-options-content">
+                                <form class="custom">
+                                    <div class="row collapse">
+                                        <div class="columns large-12">
+                                            <h5>Hotels near</h5>
+                                            <label>Where do you want to go?</label>
+                                            <input type="text" placeholder="Spain">
+                                        </div>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="columns large-6">
+                                            <label>Check in date</label>
+                                            <input type="date" >
+                                        </div>
+                                        <div class="columns large-6">
+                                            <label>Check out date</label>
+                                            <input type="date" >
+                                        </div>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="columns large-4">
+                                            <label>ROOM 1</label>
+                                            <a href="#" class="addroom-link">+ Add a room</a>
+                                        </div>                                        
+                                        <div class="columns large-offset-1 large-3">
+                                            <label for="customDropdown1">Adult</label>
+                                            <select id="customDropdown" style="width:10%">
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                        <div class="columns large-offset-1 large-3">
+                                            <label for="customDropdown1">Child</label>
+                                            <select id="customDropdown" style="width:10%">
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="large-12">
+                                            <a href="#" class="small search-button button">Search</a>
+                                        </div>
+                                    </div>
+
+                                    <hr />                                    
+                                    <div class="row collapse">
+
+                                        <div class="large-12">
+                                            <h4>
+                                                Filter by
+                                            </h4>
+
+                                            <hr />
+                                            <p>
+                                                <strong>Star rating</strong>
+                                                <span class="right">
+                                                    <span id="rating-icon"> <img src="img/down-icon.png" /></span>
+                                                </span>
+                                            </p>
+                                            <div id="ratings">
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> <img src="img/5star.png" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 Stars
+                                                </label>                                            
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> <img src="img/4star.png" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 Stars
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> <img src="img/3star.png" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 Stars
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> <img src="img/2star.png" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 Stars
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> <img src="img/1star.png" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 Stars
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr /> 
+
+                                    <div class="row collapse">
+
+                                        <div class="large-12">
+
+                                            <p>
+                                                <strong>Price Range</strong>
+                                                <span class="right">
+                                                    <span id="price-icon"> <img src="img/down-icon.png" /></span>
+                                                </span>
+                                            </p>                                           
+                                            <div class="layout-slider" id="price-range">
+                                                <input id="Slider3" type="slider" name="area" value="25;75" />
+                                                <br />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <hr /> 
+
+                                    <div class="row collapse">
+
+                                        <div class="large-12">
+
+                                            <p>
+                                                <strong>Acomodation Type</strong>
+                                                <span class="right">
+                                                    <span id="accomodation-icon"> <img src="img/down-icon.png" /></span>
+                                                </span>
+                                            </p>
+                                            <div id="accomodation-type">
+                                                <label for="radio1">
+                                                    <input name="radio1" type="radio" id="radio1" style="display:none;">
+                                                    <span class="custom radio"></span> All
+                                                </label>
+                                                <label for="radio1">
+                                                    <input name="radio1" type="radio" id="radio1" style="display:none;">
+                                                    <span class="custom radio"></span> Hotel
+                                                </label>
+                                                <label for="radio1">
+                                                    <input name="radio1" type="radio" id="radio1" style="display:none;">
+                                                    <span class="custom radio"></span> Bed & Breakfast
+                                                </label>
+                                                <label for="radio1">
+                                                    <input name="radio1" type="radio" id="radio1" style="display:none;">
+                                                    <span class="custom radio"></span> Apartment
+                                                </label>
+                                                <label for="radio1">
+                                                    <input name="radio1" type="radio" id="radio1" style="display:none;">
+                                                    <span class="custom radio"></span> Condo
+                                                </label>
+                                                <label for="radio1">
+                                                    <input name="radio1" type="radio" id="radio1" style="display:none;">
+                                                    <span class="custom radio"></span> All-Inclusive Resort
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr />
+
+                                    <div class="row collapse">
+
+                                        <div class="large-12">
+                                            <p>
+                                                <strong>Hotel Preferences</strong>
+                                                <span class="right">
+                                                    <span id="hotel-icon"> <img src="img/down-icon.png" /></span>
+                                                </span>
+                                            </p>
+                                            <div id="hotel-preference">
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> High-speed Internet (41)
+                                                </label>                                            
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> Air conditioning (52)
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> Swimming pool (55)
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> Childcare (12)
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> Hair Dryer (15)
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> Pets Allowed (10)
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> High-speed Internet (41)
+                                                </label>                                            
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> Air conditioning (52)
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> Swimming pool (55)
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> Childcare (12)
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> Hair Dryer (15)
+                                                </label>
+                                                <label for="checkbox1">
+                                                    <input type="checkbox" id="checkbox1" style="display: none;">
+                                                    <span class="custom checkbox"></span> Pets Allowed (10)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns large-9">
+                        <div class="search-results">
+                            <form class="custom">
+                                <div class="row collapse">
+                                    <div class="columns large-2">
+                                        <h6 class="text-center">Sort by</h6>
+                                    </div>
+                                    <div class="columns large-2">
+                                        <select id="customDropdown" class="small">
+                                            <option>Guest Rating</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="columns large-2">
+                                        <select id="customDropdown" class="small">
+                                            <option>Hotel Name</option>
+                                        </select> 
+                                    </div>
+                                    <div class="columns large-2">
+                                        <select id="customDropdown" class="small">
+                                            <option>Price</option>
+                                        </select>
+                                    </div>
+                                    <div class="columns large-2">
+                                        <select id="customDropdown" class="small">
+                                            <option>Most Popular</option>
+                                        </select>
+                                    </div>
+                                    <div class="columns large-2 text-center">
+                                        <img src="img/list.png" /> &nbsp; <img src="img/grid.png" /> &nbsp;<img src="img/table.gif" />
+                                    </div>
+                                </div>
+
+                            </form>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <div class="search-results-gray-row">
+                                        <div class="row collapse">
+                                            <div class="columns large-4">
+                                                <img src="img/search-result.png" class="text-center" />
+                                            </div>
+                                            <div class="columns large-6 search-results-row-column2">
+                                                <p class="hotel-title">                                                    
+                                                    Mabely Grand Hotel                                                   
+                                                </p>
+                                                <p class="gray-text hotel-description">                                                    
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                                    
+                                                </p>
+                                                <p><a href="#"> <img src="img/search-icons.png" /></a></p>
+                                            </div>
+                                            <div class="columns large-2 text-center">
+                                                <br />
+                                                <img src="img/5star.png" /> <br /><br />
+                                                <img src="img/reviews-icon.png" /> <br />
+                                                <span class="lightgraytext small-text">18 Reviews</span> <br/>
+                                                <h4 class="green-price2">$160</h4>
+                                                <span class="lightgraytext small-text">avg/night</span> <br /><br />
+                                                <img src="img/select.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="columns large-12">
+                                    <hr />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <div class="search-results-row">
+                                        <div class="row collapse">
+                                            <div class="columns large-4">
+                                                <img src="img/search-result.png" class="text-center" />
+                                            </div>
+                                            <div class="columns large-6 search-results-row-column2">
+                                                <p class="hotel-title">                                                    
+                                                    Mabely Grand Hotel                                                   
+                                                </p>
+                                                <p class="gray-text hotel-description">                                                    
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                                    
+                                                </p>
+                                                <p><a href="#"> <img src="img/search-icons.png" /></a></p>
+                                            </div>
+                                            <div class="columns large-2 text-center">
+                                                <br />
+                                                <img src="img/5star.png" /> <br /><br />
+                                                <img src="img/reviews-icon.png" /> <br />
+                                                <span class="lightgraytext small-text">18 Reviews</span> <br/>
+                                                <h4 class="green-price2">$160</h4>
+                                                <span class="lightgraytext small-text">avg/night</span> <br /><br />
+                                                <img src="img/select.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="columns large-12">
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <div class="search-results-row">
+                                        <div class="row collapse">
+                                            <div class="columns large-4">
+                                                <img src="img/search-result.png" class="text-center" />
+                                            </div>
+                                            <div class="columns large-6 search-results-row-column2">
+                                                <p class="hotel-title">                                                    
+                                                    Mabely Grand Hotel                                                   
+                                                </p>
+                                                <p class="gray-text hotel-description">                                                    
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                                    
+                                                </p>
+                                                <p><a href="#"> <img src="img/search-icons.png" /></a></p>
+                                            </div>
+                                            <div class="columns large-2 text-center">
+                                                <br />
+                                                <img src="img/5star.png" /> <br /><br />
+                                                <img src="img/reviews-icon.png" /> <br />
+                                                <span class="lightgraytext small-text">18 Reviews</span> <br/>
+                                                <h4 class="green-price2">$160</h4>
+                                                <span class="lightgraytext small-text">avg/night</span> <br /><br />
+                                                <img src="img/select.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="columns large-12">
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <div class="search-results-row">
+                                        <div class="row collapse">
+                                            <div class="columns large-4">
+                                                <img src="img/search-result.png" class="text-center" />
+                                            </div>
+                                            <div class="columns large-6 search-results-row-column2">
+                                                <p class="hotel-title">                                                    
+                                                    Mabely Grand Hotel                                                   
+                                                </p>
+                                                <p class="gray-text hotel-description">                                                    
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                                    
+                                                </p>
+                                                <p><a href="#"> <img src="img/search-icons.png" /></a></p>
+                                            </div>
+                                            <div class="columns large-2 text-center">
+                                                <br />
+                                                <img src="img/5star.png" /> <br /><br />
+                                                <img src="img/reviews-icon.png" /> <br />
+                                                <span class="lightgraytext small-text">18 Reviews</span> <br/>
+                                                <h4 class="green-price2">$160</h4>
+                                                <span class="lightgraytext small-text">avg/night</span> <br /><br />
+                                                <img src="img/select.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="columns large-12">
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <div class="search-results-row">
+                                        <div class="row collapse">
+                                            <div class="columns large-4">
+                                                <img src="img/search-result.png" class="text-center" />
+                                            </div>
+                                            <div class="columns large-6 search-results-row-column2">
+                                                <p class="hotel-title">                                                    
+                                                    Mabely Grand Hotel                                                   
+                                                </p>
+                                                <p class="gray-text hotel-description">                                                    
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                                    
+                                                </p>
+                                                <p><a href="#"> <img src="img/search-icons.png" /></a></p>
+                                            </div>
+                                            <div class="columns large-2 text-center">
+                                                <br />
+                                                <img src="img/5star.png" /> <br /><br />
+                                                <img src="img/reviews-icon.png" /> <br />
+                                                <span class="lightgraytext small-text">18 Reviews</span> <br/>
+                                                <h4 class="green-price2">$160</h4>
+                                                <span class="lightgraytext small-text">avg/night</span> <br /><br />
+                                                <img src="img/select.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="columns large-12">
+                                    <hr />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <div class="search-results-row">
+                                        <div class="row collapse">
+                                            <div class="columns large-4">
+                                                <img src="img/search-result.png" class="text-center" />
+                                            </div>
+                                            <div class="columns large-6 search-results-row-column2">
+                                                <p class="hotel-title">                                                    
+                                                    Mabely Grand Hotel                                                   
+                                                </p>
+                                                <p class="gray-text hotel-description">                                                    
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                                    
+                                                </p>
+                                                <p><a href="#"> <img src="img/search-icons.png" /></a></p>
+                                            </div>
+                                            <div class="columns large-2 text-center">
+                                                <br />
+                                                <img src="img/5star.png" /> <br /><br />
+                                                <img src="img/reviews-icon.png" /> <br />
+                                                <span class="lightgraytext small-text">18 Reviews</span> <br/>
+                                                <h4 class="green-price2">$160</h4>
+                                                <span class="lightgraytext small-text">avg/night</span> <br /><br />
+                                                <img src="img/select.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="columns large-12">
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <div class="search-results-row">
+                                        <div class="row collapse">
+                                            <div class="columns large-4">
+                                                <img src="img/search-result.png" class="text-center" />
+                                            </div>
+                                            <div class="columns large-6 search-results-row-column2">
+                                                <p class="hotel-title">                                                    
+                                                    Mabely Grand Hotel                                                   
+                                                </p>
+                                                <p class="gray-text hotel-description">                                                    
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                                    
+                                                </p>
+                                                <p><a href="#"> <img src="img/search-icons.png" /></a></p>
+                                            </div>
+                                            <div class="columns large-2 text-center">
+                                                <br />
+                                                <img src="img/5star.png" /> <br /><br />
+                                                <img src="img/reviews-icon.png" /> <br />
+                                                <span class="lightgraytext small-text">18 Reviews</span> <br/>
+                                                <h4 class="green-price2">$160</h4>
+                                                <span class="lightgraytext small-text">avg/night</span> <br /><br />
+                                                <img src="img/select.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="columns large-12">
+                                    <hr />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="columns large-12">
+                                    <p class="text-center" style="letter-spacing: 5px">
+                                        <img src="img/paging-prev.png" />
+                                        <span style="padding-left: 15px;padding-right: 15px">
+                                            1  /  2  /  3   /  4  /  5  /  6  /  7  / ... /  125
+                                        </span>
+                                        <img src="img/paging-next.png" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Start of Footer Section -->
+        <section id="footer" style="background-color: #15262F">
+            <div class="row collapse">
+                <div class="columns large-3">
+                    <h5>Let’s socialize</h5>
+                    <img src="img/social-icons.png" />
+                    <img src="img/travel-logo.png" style="margin-top: 40px" />
+                </div>
+                <div class="columns large-3">
+                    <h5>Travel Specialists</h5>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Golf Vacations</a></li>
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Ski & Snowboarding</a></li>
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Disney Parks Vacations</a></li>
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Disneyland Vacations</a></li>
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Disney World Vacations</a></li>
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Vacations As Advertised</a></li>
+                    </ul>
+                </div>
+                <div class="columns large-3">
+                    <h5>Travel Specialists</h5>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Weddings</a></li>
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Accessible Travel</a></li>
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Disney Parks</a></li>
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Cruises</a></li>
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;Round the World</a></li>
+                        <li><a href="#" class="footer-link"><img src="img/footerlink-icon.png"/>&nbsp;&nbsp;First Class Flights</a></li>
+                    </ul>
+                </div>
+                <div class="columns large-3">
+                    <h5>Newsletter</h5>
+                    <div class="row collapse">
+                        <div class="large-10 columns">
+                            <input type="text" placeholder="">
+                        </div>
+                        <div class="large-2 columns">
+                            <img src="img/news-btn.png" class="postfix" />
+                        </div>
+                    </div>
+                    <br />
+                    <h5>Customer Support</h5>
+                    <h6 style="color: #0099CC">1-866-599-6674</h6>
+                    <a href="mailto:office@travel.com" class="footer-link">office@travel.com</a>
+                </div>
+            </div>
+        </section>
+        <footer id="footer-menu">
+            <ul class="bottom-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Last minute</a></li>
+                <li><a href="#">Early booking</a></li>                            
+                <li><a href="#">Special offers</a></li>                            
+                <li><a href="#">Blog</a></li>                            
+                <li><a href="#">Contact</a></li>                            
+            </ul> 
+            <center><a href="#header"><img src="img/go-top.png" /></a></center>
+        </footer>
+
+
+
+        <!-- End of Footer Section -->
+
+        <script>
+            document.write('<script src=' +
+                ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+                '.js><\/script>')
+        </script>
+
+        <script src="javascripts/foundation/foundation.js"></script>
+
+        <script src="javascripts/foundation/foundation.abide.js"></script>
+
+        <script src="javascripts/foundation/foundation.alerts.js"></script>
+
+        <script src="javascripts/foundation/foundation.clearing.js"></script>
+
+        <script src="javascripts/foundation/foundation.cookie.js"></script>
+
+        <script src="javascripts/foundation/foundation.dropdown.js"></script>
+
+        <script src="javascripts/foundation/foundation.forms.js"></script>
+
+        <script src="javascripts/foundation/foundation.interchange.js"></script>
+
+        <script src="javascripts/foundation/foundation.joyride.js"></script>
+
+        <script src="javascripts/foundation/foundation.magellan.js"></script>
+
+        <script src="javascripts/foundation/foundation.orbit.js"></script>
+
+        <script src="javascripts/foundation/foundation.placeholder.js"></script>
+
+        <script src="javascripts/foundation/foundation.reveal.js"></script>
+
+        <script src="javascripts/foundation/foundation.section.js"></script>
+
+        <script src="javascripts/foundation/foundation.tooltips.js"></script>
+
+        <script src="javascripts/foundation/foundation.topbar.js"></script>
+
+        <script src="javascripts/custom.js"></script>
+        <script>
+            $(document).foundation();
+            // Slider Option
+            jQuery("#Slider3").slider({ from: 0, to: 500, heterogeneity: ['50/100', '75/250'],  limits: false, step: 1, dimension: '&nbsp;$' , skin: "round_plastic" });
+        </script>
+    </body>
+</html>
